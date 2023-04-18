@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanca Cepa</title>
+    <link rel="stylesheet" href="../css/style_mobileFirst.css">
+    <script src="https://kit.fontawesome.com/b81ea28978.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../flavicon.ico" type="image/png">
+</head>
+<body class="contacto">
+    
+    <div class="grid">
+
+        <!-- Aca va el header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__container__div">
+                    <a href="../index.html">
+                        <img src="../assets/img/logo cepa.png" alt="logo blanca cepa" class="header__container__div__img">
+                    </a>
+                </div>
+                <div class="header__container__div">
+
+                    <!--Navegacion-->
+                    <nav>
+                        <ul>
+                            <div class="header__container__div__nav">
+                                <li class="header__container__div__nav__list">
+                                    <a href="../index.html" class="header__container__div__nav__list__button"> Home </a>
+                                </li>
+                                <li class="header__container__div__nav__list">
+                                    <a href="discografia.html" class="header__container__div__nav__list__button">Discografia </a>
+                                </li>
+                                <li class="header__container__div__nav__list">
+                                    <a href="conciertos.html" class="header__container__div__nav__list__button">Conciertos </a>
+                                </li>
+                                <li class="header__container__div__nav__list">
+                                    <a href="media.html" class="header__container__div__nav__list__button"> Media <a>
+                                </li>
+                                <li class="header__container__div__nav__list">
+                                    <a href="#" class="header__container__div__nav__list__button">Contacto </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+       <!--Contenido principal-->
+       <main class="main">
+
+        <div class="tituloPrincipal">
+                 <h1>CONTACTO</h1>
+        </div>
+
+        <div class="contenedorForm">
+            <form action="">
+                <div>
+                    <label for="nombre"> Nombre y Apellido </label>
+                    <br>
+                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off">
+                </div>
+                <br>
+                <div>
+                    <label for="edad"> Nombre y Apellido </label>
+                    <br>
+                    <input id ="edad" name="edad" type="date" placeholder="Fecha de Nacimiento" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email"> Email </label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su E-mail">
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="term_cond">
+                        <input type="checkbox" name="term_cond" id="term_cond"> Acepto terminos y condiciones
+                    </label>
+                </div>
+    
+                <div>
+                    <input type="submit" id="enviar" value="Enviar">
+                    <input type="button" id="reset" value="Reset">
+                </div>
+            </form>
+    
+        </div>
+        
+    </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <hr>
+            
+            <div  class="footer__container">
+                <div class="footer__container__items">
+                    <a href="https://www.instagram.com/blanca.cepa/" target="_blank" class="items instagram">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/blanca.cepa" target="_blank" class="items facebook">
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@blancacepa" target="_blank" class="items youtube">
+                        <i class="fa-brands fa-youtube fa-lg"></i>
+                    </a>
+                    <a href="https://open.spotify.com/artist/2ZpVgzk8DaUdTKPcJkAAJi?si=vgHQnOvzRSyT-YuaKi6jng" target="_blank" class="items spotify">
+                        <i class="fa-brands fa-spotify fa-lg"></i>
+                    </a>
+                </div>
+                <div class="footer__container__items">
+                    <p>Suscribite a nuestro Newsletter mensual</p>
+                    <form action="">
+                        <input type="email" name="emailnews" id="emailnews" placeholder="email@email.com">
+
+                        <input type="submit" value="Suscribite">
+                    </form>
+                </div>
+                <div class="footer__container__items">
+                    <p>Copyright © 2023 Blanca Cepa · Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
