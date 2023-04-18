@@ -4,144 +4,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+}   
 
-a {
-    text-decoration: none;
-}
-
-body {  
+.home { 
     font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/livingSentados.jpg");
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: rgb(36, 7, 7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 
-.discografia {
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/barParados.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.contacto {
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/libro.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-/* GRID*/
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh auto 10vh;
-    column-gap: 10vh;
-    grid-template-areas:    "h"
-                            "m"
-                            "f";
-}
-
-.header{
-    grid-area: h;
-}
-
-.main{
-    grid-area: m;
-}
-
-.footer {
-    grid-area: f
-}
-
 /*--------------------------------------------*/
-
-/* HEADER */
-.contenedorHeader {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-
-    position: fixed;
-    z-index: 10;
-}
-
-.headerNav{
-    /*background-color: rgb(27, 132, 180);*/
-    width: 50%;
-}
-
-.headerImg {
-    width: 7rem;
-    margin: 2vh;
-    margin-left: 10%;
-}
-
-.navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.listaNavBar {
-    margin-left: 1rem;
-    margin-right: 1rem
-}
-
-.boton {
-    color: white;
-}
-
-
-/*--------------------------------------------*/
-/*FOOTER*/
-
-.contenedorFooter {
-    background-color: rgb(0, 0, 0);
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: white;
-
-    position:sticky;
-    bottom: 0
-};
-
-.footerItems {
-    width: 30%;
-    text-align:center;
-}
-
-/*--------------------------------------------*/
-/*MAIN - HOME*/
-
-.home {
-    margin-bottom: 100vh;
-    justify-content: center;
-}
-
-.recuadro {
+/* REUTILIZABLE */
+.titulos {
+    width: 25rem;
     padding: 2vh;
-    width: 20rem;
     margin: auto;
-    margin-top: 5vh;
 
-    background-color: rgba(92, 91, 91, 0.425);
+    background-color: rgba(139, 139, 139, 0.425);
     border-radius: 15px;
     backdrop-filter: blur(5px);
     text-align: center;
@@ -149,64 +31,69 @@ body {
     border: solid 2px black;
 }
 
-.titulos {
-    padding: 2vh;
-    width: 10rem;
-    margin: auto;
 
-    background-color: rgba(92, 91, 91, 0.425);
-    border-radius: 15px 50px;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    letter-spacing: 5px;
-    border: solid 2px black;
-}
+/*--------------------------------------------*/
+/* HEADER */
 
-/* HISTORIA*/
-.contenedorLaBanda {
-    margin: 2rem;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
+.navColor {
+    background-color: rgba(0, 0, 0);
 }
 
 
-.laBanda {
-    list-style-type: none;
-    width: 50%;
-    text-align: center;
+.sizeLogo {
+    width: 7rem;
 }
+
+
+/*--------------------------------------------*/
+/*FOOTER*/
+
+.instagram i:hover {
+    color: #C13584
+}
+
+.facebook i:hover {
+    color: #2f55a4
+}
+
+.youtube i:hover {
+    color: #c4302b
+}
+
+.spotify i:hover {
+    color: #1DB954
+}
+
+
+/*--------------------------------------------*/
+/*MAIN - HOME*/
+
+.main {
+    height: 100vh;
+}
+
+.top-15 {
+    top: 15% ;
+  }
+
+
+/*LA BANDA*/
 
 .infoLaBanda {
-    margin-left: 10px ;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.644);
     color: white;
     border-radius: 10px;
 }
 
-.fotoHistoria {
-    width: 80%;
-    border-radius: 10px;
+.imgBanda {
+    width: 100%
 }
 
 
 /*MUSICOS*/
 
-.contenedorMusicos{
-    margin-top: 10vh;
-    width: 100%;
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.card {
+.musicos {
     margin: 2rem;
     padding: 5vh;
     padding-bottom: 2vh;
@@ -216,72 +103,58 @@ body {
     align-content:space-between;
     text-align: center;
     border-radius: 10px;
-    border: solid 3px black;
+    border: solid 2px black;
 }
-.cardImg {
-    width: 20rem;
-    border-radius: 10px
-}
+
 
 /*--------------------------------------------*/
 /*MAIN - CONCIERTOS*/
 
-.contenedorConciertos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-};
-
-.conciertoCard {
-    width: 80%;
-    border: solid 1px;
-    background-color: rgb(0, 85, 255);
+.concertCardColor {
+    background-color: rgba(0, 0, 0, 0.462);
+    color: white
 }
 
-.mapa {
-    width: 70rem;
-    border-radius: 10px;
-}
-
-/*--------------------------------------------*/
-/*MAIN - DISCOGRAFIA*/
-
-.main h2 {
+.concertDate {
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-.contenedorAlbums {
-    /*background-color: aqua;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.cardAlbums {
-    background-color: rgba(0, 0, 0, 0.418);
-    color: white;
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-    border-radius:12px;
-    margin-bottom: 2rem;
-}
-
-.cardAlbums p {
-    margin-bottom: 1rem;
+    margin-top: 5px;
 }
 
 
 /*--------------------------------------------*/
-/*MAIN - CONTACTO*/
+/*MEDIA QUERIES*/
 
-.contenedorForm {
-    background-color: rgba(255, 255, 255, 0.377);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem;
+@media screen and (min-width: 993px) {
+
+    .home { 
+        font-family: "quicksand", sans-serif;
+        background-image: url("../assets/img/livingSentados_mobile.jpg");
+        background-color: rgb(36, 7, 7);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .discografia {
+        font-family: "quicksand", sans-serif;
+        background-image: url("../assets/img/barParados_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    } 
+    
+    .conciertos {
+        font-family: "quicksand", sans-serif;
+        background-image: url("../assets/img/barSentados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .navColor {
+        background-color:  rgba(0, 0, 0, 0.468);
+    } 
 }

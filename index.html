@@ -5,180 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanca Cepa</title>
-    <link rel="stylesheet" href="./css/style_mobileFirst.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Estilo propio-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/b81ea28978.js" crossorigin="anonymous"></script>
+    <!--Icono-->
     <link rel="icon" href="flavicon.ico" type="image/png">
 </head>
-<body>
 
-    <div class="grid">
+<body class="home">
+    <!-- Aca va el header -->
+    <header class="container-fluid">
+        <!--Navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navColor">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo cepa.png" alt="logo cepa" class="sizeLogo">
+                </a>
+                    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="./pages/discografia.html" >Discografia</a>
+                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/conciertos.html">Conciertos</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="./pages/media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
 
-            <!-- Aca va el header -->
-        <header class="header">
-            <div class="header__container">
-                <div class="header__container__div">
-                    <a href="#">
-                        <img src="./assets/img/logo cepa.png" alt="logo blanca cepa" class="header__container__div__img">
-                    </a>
+    <!--Contenido principal-->
+    <main class="container">
+        <div class="main position-relative">
+            <div class="position-absolute top-15 start-50 translate-middle-x">
+                <h1 class="titulos">BLANCA CEPA</h1>
+            </div>
+        </div>
+
+        <!--Historia de la banda-->
+        <section>
+            <h2 class="titulos my-5">La Banda</h2>
+            <div class="d-flex flex-sm-column flex-md-row justify-content-center align-items-center">
+                <div class="col-7 me-2 infoLaBanda">
+                    <div>
+                        <p>
+                            Blanca Cepa es una banda de rock formada en Avellaneda Buenos Aires,  a principios del año 2012, por Santiago López en voz y guitarra, Lucas Pizarro en bajo y Matías Rodolfo en batería. Luego de un año de shows por todo Avellaneda y Quilmes, Matías decide dejar el proyecto y entra en su lugar Maxi Cataffo en batería.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            En Enero del 2013, con esta nueva formación, graban un material acústico  “Corazón, Acústico y Amigos”, de cinco canciones y con  invitados en cada tema. A mediados de ese año buscando otro color en la banda, se suma Esteban Ballejos en Saxo. Con esta última incorporación, en Diciembre, graban su primer disco en los estudios Romaphonic a cargo de Hernán Manrresa. En agosto del 2015 sale a luz “Brotes” presentándose en Mutar Bar - Avellaneda a sala llena.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            A fines del año 2015 se incorpora Jorge Bernardi haciéndose cargo de la primera guitarra conformando asi hasta el dia de hoy esta formación. A lo largo del año 2016,”Brotes” se presentó por Avellaneda, Quilmes y en lugares como The Roxy, El Marquee entre otros de Capital Federal. 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            En Agosto del año 2016, de la mano de Rollover Producciones, graban “Alerta, no es un simulacro” en los estudios ION. Una sesión en vivo de 4 canciones, con el fin de concientizar sobre la problemática social y ambiental que sufrimos hoy en día y el cuidado de nuestro planeta.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            En la actualidad, la banda sigue tocando por todo Buenos Aires, y a punto de lanzar su segundo album de estudio "Siempre el Mismo Cuento".
+                        </p>
+                    </div>
                 </div>
-                <div class="header__container__div">
-
-                    <!--Navegacion-->
-                    <nav>
-                        <ul>
-                            <div class="header__container__div__nav">
-                                <li class="header__container__div__nav__list">
-                                    <a href="#" class="header__container__div__nav__list__button"> Home </a>
-                                </li>
-                                <li class="header__container__div__nav__list">
-                                    <a href="./pages/discografia.html" class="header__container__div__nav__list__button">Discografia </a>
-                                </li>
-                                <li class="header__container__div__nav__list">
-                                    <a href="./pages/conciertos.html" class="header__container__div__nav__list__button">Conciertos </a>
-                                </li>
-                                <li class="header__container__div__nav__list">
-                                    <a href="./pages/media.html" class="header__container__div__nav__list__button"> Media <a>
-                                </li>
-                                <li class="header__container__div__nav__list">
-                                    <a href="./pages/contacto.html" class="header__container__div__nav__list__button">Contacto </a>
-                                </li>
-                            </div>
-                        </ul>
-                    </nav>
+                <div class="col-5 ms-2">
+                    <img src="./assets/img/todos.jpg" alt="la banda" class="imgBanda rounded">
                 </div>
             </div>
-        </header>
+        </section>
 
-        <!--Contenido principal-->
-        <main class="main">
-            <div class="main__home">
-                <div class="tituloPrincipal">
-                        <h1>BLANCA CEPA</h1>
-                </div>
-            </div>
-
-            <!--Historia de la banda-->
-            <section class="main__section">
-                <h2 class="titulos">La Banda</h2>
-                <div class="main__section__containerBanda">
-                    <div class="laBanda infoLaBanda">
-                        <div>
-                            <p>Blanca Cepa es una banda de rock formada en Avellaneda Buenos Aires,  a principios del año 2012, por Santiago López en voz y guitarra, Lucas Pizarro en bajo y Matías Rodolfo en batería. Luego de un año de shows por todo Avellaneda y Quilmes, Matías decide dejar el proyecto y entra en su lugar Maxi Cataffo en batería.
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                En Enero del 2013, con esta nueva formación, graban un material acústico  “Corazón, Acústico y Amigos”, de cinco canciones y con  invitados en cada tema. A mediados de ese año buscando otro color en la banda, se suma Esteban Ballejos en Saxo. Con esta última incorporación, en Diciembre, graban su primer disco en los estudios Romaphonic a cargo de Hernán Manrresa. En agosto del 2015 sale a luz “Brotes” presentándose en Mutar Bar - Avellaneda a sala llena.
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                A fines del año 2015 se incorpora Jorge Bernardi haciéndose cargo de la primera guitarra conformando asi hasta el dia de hoy esta formación. A lo largo del año 2016,”Brotes” se presentó por Avellaneda, Quilmes y en lugares como The Roxy, El Marquee entre otros de Capital Federal. 
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                En Agosto del año 2016, de la mano de Rollover Producciones, graban “Alerta, no es un simulacro” en los estudios ION. Una sesión en vivo de 4 canciones, con el fin de concientizar sobre la problemática social y ambiental que sufrimos hoy en día y el cuidado de nuestro planeta.
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                En la actualidad, la banda sigue tocando por todo Buenos Aires, y a punto de lanzar su segundo album de estudio "Siempre el Mismo Cuento".
-                            </p>
-                        </div>
-                    </div>
-                    <div class="laBanda">
-                        <img src="./assets/img/todos.jpg" alt="la banda" class="fotoHistoria">
-                    </div>
-                </div>
-            </section>
-
-            <!--Musicos-->
-            <section>
-                <h2 class="titulos">Musicos</h2>
-                <div class="contenedorMusicos">
-                    <div class="card">
-                        <img src="./assets/img/santu.jpg" alt="santiago lopez" class="cardImg">
-                        <h3>Santiago Lopez</h3>
-                        <p> Guitarra y Voz</p>
-                        <a href="https://www.instagram.com/santu.bc/" target="_blank">
-                            <i class="fa-brands fa-instagram fa-lg"></i>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/goti.jpg" alt="jorge bernardi" class="cardImg">
-                        <h3>Jorge Bernardi</h3>
-                        <p>Guitarra</p>
-                    
-                        <a href="https://www.instagram.com/gotybernardi/" target="_blank">
-                            <i class="fa-brands fa-instagram fa-lg"></i>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/maxi.jpg" alt="maxi cataffo" class="cardImg">
-                        <h3>Maximilinano Cataffo</h3>
-                        <p>Bateria</p>
-                    
-                        <a href="https://www.instagram.com/maxicataffo/" target="_blank">
-                            <i class="fa-brands fa-instagram fa-lg"></i>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/pela.jpg" alt="esteban ballejos" class="cardImg">
-                        <h3>Esteban Ballejos</h3>
-                        <p>Saxo</p>
-                    
-                        <a href="https://www.instagram.com/esteban_ballejos/" target="_blank">
-                            <i class="fa-brands fa-instagram  fa-lg"></i>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/lucas.jpg" alt="lucas pizarro" class="cardImg">
-                        <h3>Lucas Pizarro</h3>
-                        <p>Bajo</p>
-                    
-                        <a href="https://www.instagram.com/luq.pizarro/" target="_blank">
+        <!--Musicos-->
+        <section>
+            <h2 class="titulos my-5">Musicos</h2>
+            <div class="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center align-items-center">
+                <div class="card musicos" style="width: 20rem;">
+                    <img src="./assets/img/santu.jpg" class="card-img-top" alt="santiago lopez">
+                    <div class="card-body">
+                        <h5 class="card-title">Santiago Lopez</h5>
+                        <p class="card-text">Guitarra y voz</p>
+                        <a href="https://www.instagram.com/santu.bc/" target="_blank" class="text-light instagram">
                             <i class="fa-brands fa-instagram fa-lg"></i>
                         </a>
                     </div>
                 </div>
-            </section>
-        </main>
 
-        <!--Footer-->
-        <footer class="footer">
-            <hr>
-            
-            <div  class="footer__container">
-                <div class="footer__container__items">
-                    <a href="https://www.instagram.com/blanca.cepa/" target="_blank" class="items instagram">
+                <div class="card musicos" style="width: 20rem;">
+                    <img src="./assets/img/maxi.jpg" class="card-img-top" alt="maxi cataffo">
+                    <div class="card-body">
+                        <h5 class="card-title">Maxi Cattafo</h5>
+                        <p class="card-text">Bateria</p>
+                        <a href="https://www.instagram.com/maxicataffo/" target="_blank" class="text-light instagram">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card musicos" style="width: 20rem;">
+                    <img src="./assets/img/goti.jpg" class="card-img-top" alt="jorge bernardi">
+                    <div class="card-body">
+                    <h5 class="card-title">Jorge Bernardi</h5>
+                    <p class="card-text">Guitarra</p>
+                    <a href="https://www.instagram.com/gotybernardi/" target="_blank" class="text-light instagram">
                         <i class="fa-brands fa-instagram fa-lg"></i>
                     </a>
-                    <a href="https://www.facebook.com/blanca.cepa" target="_blank" class="items facebook">
-                        <i class="fa-brands fa-facebook fa-lg"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@blancacepa" target="_blank" class="items youtube">
-                        <i class="fa-brands fa-youtube fa-lg"></i>
-                    </a>
-                    <a href="https://open.spotify.com/artist/2ZpVgzk8DaUdTKPcJkAAJi?si=vgHQnOvzRSyT-YuaKi6jng" target="_blank" class="items spotify">
-                        <i class="fa-brands fa-spotify fa-lg"></i>
-                    </a>
                 </div>
-                <div class="footer__container__items">
-                    <p>Suscribite a nuestro Newsletter mensual</p>
-                    <form action="">
-                        <input type="email" name="emailnews" id="emailnews" placeholder="email@email.com">
+                </div>
+                <div class="card musicos" style="width: 20rem;">
+                    <img src="./assets/img/pela.jpg" class="card-img-top" alt="esteban ballejos">
+                    <div class="card-body">
+                        <h5 class="card-title">Esteban Ballejos</h5>
+                        <p class="card-text">Saxo</p>
+                        <a href="https://www.instagram.com/esteban_ballejos/" target="_blank" class="text-light instagram">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
 
-                        <input type="submit" value="Suscribite">
-                    </form>
-                </div>
-                <div class="footer__container__items">
-                    <p>Copyright © 2023 Blanca Cepa · Todos los derechos reservados</p>
+                <div class="card musicos" style="width: 20rem;">
+                    <img src="./assets/img/lucas.jpg" class="card-img-top" alt="lucas pizarro">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Pizarro</h5>
+                        <p class="card-text">Bajo</p>
+                        <a href="https://www.instagram.com/luq.pizarro/" target="_blank" class="text-light instagram">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </section>
+    </main>
 
-    </div>
+    <!--Footer-->
+    <footer class=" container py-3 mt-5">
+        <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+            <li class="mx-1">
+                <a href="https://www.instagram.com/blanca.cepa/" target="_blank" class="instagram text-light">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+            </li>
+            <li class="mx-1">
+                <a href="https://www.facebook.com/blanca.cepa" target="_blank" class="facebook text-light">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+            </li>
+            <li class="mx-1">
+                <a href="https://www.youtube.com/@blancacepa" target="_blank" class="youtube text-light">
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+            </li>
+            <li class="mx-1">
+                <a href="https://open.spotify.com/artist/2ZpVgzk8DaUdTKPcJkAAJi?si=vgHQnOvzRSyT-YuaKi6jng" target="_blank" class="spotify text-light">
+                    <i class="fa-brands fa-spotify fa-xl"></i>
+                </a>
+            </li>
+        </ul>
 
+        <p class="text-center text-light">Copyright © 2023 Blanca Cepa · Todos los derechos reservados</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
