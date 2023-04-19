@@ -69,7 +69,7 @@
 /*MAIN - HOME*/
 
 .main {
-    height: 100vh;
+    height: 20vh;
 }
 
 .top-15 {
@@ -157,4 +157,8 @@
     .navColor {
         background-color:  rgba(0, 0, 0, 0.468);
     } 
+
+    .main {
+        height: 100vh;
+    }
 }
