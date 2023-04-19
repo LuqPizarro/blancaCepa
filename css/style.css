@@ -6,7 +6,25 @@
     box-sizing: border-box;
 }   
 
-.home { 
+.home{ 
+    font-family: "quicksand", sans-serif;
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: rgb(36, 7, 7);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.conciertos{ 
+    font-family: "quicksand", sans-serif;
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: rgb(36, 7, 7);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.discografia{ 
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
     background-color: rgb(36, 7, 7);
