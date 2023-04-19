@@ -10,7 +10,7 @@
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
     background-color: rgb(36, 7, 7);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
