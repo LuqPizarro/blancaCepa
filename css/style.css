@@ -9,35 +9,35 @@
 .home{ 
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(36, 7, 7);
-    background-size: contain;
-    background-repeat: repeat;
+    background-color: rgb(17, 0, 0);
+    background-size: fixed;
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment:fixed;
 }
 .conciertos{ 
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(36, 7, 7);
-    background-size: contain;
-    background-repeat: repeat;
+    background-color: rgb(17, 0, 0);
+    background-size: fixed;
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment:fixed;
 }
 .discografia{ 
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(36, 7, 7);
-    background-size: contain;
-    background-repeat: repeat;
+    background-color: rgb(17, 0, 0);
+    background-size: fixed;
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment:fixed;
 }
 
 /*--------------------------------------------*/
 /* REUTILIZABLE */
 .titulos {
-    width: 25rem;
+    width: 23rem;
     padding: 2vh;
     margin: auto;
 
@@ -142,41 +142,39 @@
 /*--------------------------------------------*/
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 526px) {
-
-    .home { 
-        font-family: "quicksand", sans-serif;
-        background-image: url("../assets/img/livingSentados_mobile.jpg");
-        background-color: rgb(36, 7, 7);
-        background-size: cover;
-        background-repeat: repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
+@media screen and (min-width: 992px) {
     
-    .discografia {
-        font-family: "quicksand", sans-serif;
-        background-image: url("../assets/img/barParados_mobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    } 
-    
-    .conciertos {
-        font-family: "quicksand", sans-serif;
-        background-image: url("../assets/img/barSentados.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    
+    /* HEADER */
     .navColor {
         background-color:  rgba(0, 0, 0, 0.468);
     } 
 
+    /*MAIN - HOME*/
     .main {
         height: 100vh;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .home { 
+        background-image: url("../assets/img/livingSentados_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .discografia {
+        background-image: url("../assets/img/barParados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    } 
+    
+    .conciertos {
+        background-image: url("../assets/img/barSentados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
