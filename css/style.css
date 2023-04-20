@@ -10,7 +10,7 @@
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
     background-color: rgb(17, 0, 0);
-    background-size: contain;
+    background-size: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
@@ -25,6 +25,24 @@
     background-attachment:fixed;
 }
 .discografia{ 
+    font-family: "quicksand", sans-serif;
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: rgb(17, 0, 0);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+.media{ 
+    font-family: "quicksand", sans-serif;
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: rgb(17, 0, 0);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+.contacto{ 
     font-family: "quicksand", sans-serif;
     background-image: url("../assets/img/backgroundMobile.jpg");
     background-color: rgb(17, 0, 0);
@@ -173,6 +191,20 @@
     
     .conciertos {
         background-image: url("../assets/img/barSentados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .media {
+        background-image: url("../assets/img/Libro2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .contacto {
+        background-image: url("../assets/img/libro.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
