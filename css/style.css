@@ -135,9 +135,6 @@
     padding-bottom: 2vh;
     background-color:  rgba(0, 0, 0, 0.644);
     color: white;
-    display: inline-block;
-    align-content:space-between;
-    text-align: center;
     border-radius: 10px;
     border: solid 2px black;
 }
