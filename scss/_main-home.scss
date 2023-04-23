@@ -1,0 +1,25 @@
+.main {
+    height: 20vh;
+}
+
+/*LA BANDA*/
+.infoLaBanda {
+    padding: 20px;
+    background-color: map-get($colors, cardBackgroundColor);
+    color: map-get($colors, whiteColor);
+    border-radius: $radius-10;
+}
+
+.imgBanda {
+    width: 100%
+}
+
+
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+@media screen and (min-width: 992px) {
+
+    .main {
+        height: 100vh;
+    }
+}

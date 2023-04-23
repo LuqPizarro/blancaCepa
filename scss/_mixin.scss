@@ -1,0 +1,12 @@
+@mixin title ($width, $padding, $letterSpacing) {
+    width: $width;
+    padding: $padding;
+    margin: auto;
+
+    background-color: map-get($colors, titleBackgroundColor);
+    border-radius: $radius-15;
+    backdrop-filter: blur(5px);
+    text-align: $alignCenter;
+    letter-spacing: $letterSpacing;
+    border: solid 2px map-get($colors, blackColor );
+};

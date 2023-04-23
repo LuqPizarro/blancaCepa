@@ -1,0 +1,17 @@
+
+
+.instagram i:hover {
+    color: map-get($redes, instagram)
+}
+
+.facebook i:hover {
+    color: map-get($redes, facebook)
+}
+
+.youtube i:hover {
+    color: map-get($redes, youtube)
+}
+
+.spotify i:hover {
+    color: map-get($redes, spotify)
+}

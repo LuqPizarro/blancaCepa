@@ -1,0 +1,82 @@
+.home{ 
+    font-family: $fontType;
+    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-color: map-get($colors, bodyBackgroundColor);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+};
+
+/*Hago esto solo para implementar el extend*/
+.conciertos {
+    @extend .home
+};
+
+.discografia{
+    @extend .home
+};
+
+.media{
+    @extend .home
+};
+
+.contacto{
+    @extend .home
+};
+
+/*-----------------------------------------------*/
+
+.tituloPrincipal {
+    @include title (23rem, 2vh, 5px)
+}
+
+.tituloSecundario {
+    @include title (17rem, 2vh, 2px)
+}
+
+.cardStyle {
+    margin: 2rem;
+    padding: 5vh;
+    padding-bottom: 2vh;
+    background-color: map-get($colors, cardBackgroundColor);
+    color: map-get($colors, whiteColor);
+    border-radius: $radius-10;
+    border: solid 2px map-get($colors, blackColor);
+    /*text-align: $alignCenter;*/
+}
+
+/*-----------------------------------------------*/
+
+@media screen and (min-width: 576px) {
+
+    .home { 
+        background-image: url("../assets/img/livingSentados_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .discografia {
+        background-image: url("../assets/img/barParados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+    
+    .conciertos {
+        background-image: url("../assets/img/barSentados.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*.media {
+        background-image: url("../assets/img/Libro2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }*/
+
+   /* .contacto {
+        background-image: url("../assets/img/libro.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }*/
+}

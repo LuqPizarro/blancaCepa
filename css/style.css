@@ -1,209 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}   
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-.home{ 
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(17, 0, 0);
-    background-size: fixed;
+.home, .contacto, .media, .discografia, .conciertos {
+  font-family: "quicksand", sans-serif;
+  background-image: url("../assets/img/backgroundMobile.jpg");
+  background-color: rgb(17, 0, 0);
+  background-size: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Hago esto solo para implementar el extend*/
+/*-----------------------------------------------*/
+.tituloPrincipal {
+  width: 23rem;
+  padding: 2vh;
+  margin: auto;
+  background-color: rgba(139, 139, 139, 0.425);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  letter-spacing: 5px;
+  border: solid 2px black;
+}
+
+.tituloSecundario {
+  width: 17rem;
+  padding: 2vh;
+  margin: auto;
+  background-color: rgba(139, 139, 139, 0.425);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  letter-spacing: 2px;
+  border: solid 2px black;
+}
+
+.cardStyle {
+  margin: 2rem;
+  padding: 5vh;
+  padding-bottom: 2vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  border-radius: 10px;
+  border: solid 2px black;
+  /*text-align: $alignCenter;*/
+}
+
+/*-----------------------------------------------*/
+@media screen and (min-width: 576px) {
+  .home, .conciertos, .discografia, .media, .contacto {
+    background-image: url("../assets/img/livingSentados_mobile.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-}
-.conciertos{ 
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(17, 0, 0);
-    background-size: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-}
-.discografia{ 
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(17, 0, 0);
-    background-size: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-}
-.media{ 
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(17, 0, 0);
-    background-size: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-}
-.contacto{ 
-    font-family: "quicksand", sans-serif;
-    background-image: url("../assets/img/backgroundMobile.jpg");
-    background-color: rgb(17, 0, 0);
-    background-size: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-}
-
-/*--------------------------------------------*/
-/* REUTILIZABLE */
-.titulos {
-    width: 23rem;
-    padding: 2vh;
-    margin: auto;
-
-    background-color: rgba(139, 139, 139, 0.425);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    text-align: center;
-    letter-spacing: 5px;
-    border: solid 2px black;
-}
-
-
-/*--------------------------------------------*/
-/* HEADER */
-
-.navColor {
-    background-color: rgba(0, 0, 0);
-}
-
-
-.sizeLogo {
-    width: 7rem;
-}
-
-
-/*--------------------------------------------*/
-/*FOOTER*/
-
-.instagram i:hover {
-    color: #C13584
-}
-
-.facebook i:hover {
-    color: #2f55a4
-}
-
-.youtube i:hover {
-    color: #c4302b
-}
-
-.spotify i:hover {
-    color: #1DB954
-}
-
-
-/*--------------------------------------------*/
-/*MAIN - HOME*/
-
-.main {
-    height: 20vh;
-}
-
-.top-15 {
-    top: 15% ;
   }
-
-
-/*LA BANDA*/
-
-.infoLaBanda {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.644);
-    color: white;
-    border-radius: 10px;
+  .discografia {
+    background-image: url("../assets/img/barParados.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .conciertos {
+    background-image: url("../assets/img/barSentados.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /*.media {
+      background-image: url("../assets/img/Libro2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }*/
+  /* .contacto {
+       background-image: url("../assets/img/libro.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+   }*/
 }
-
-.imgBanda {
-    width: 100%
+.navColor {
+  background-color: black;
 }
-
-
-/*MUSICOS*/
-
-.musicos {
-    margin: 2rem;
-    padding: 5vh;
-    padding-bottom: 2vh;
-    background-color:  rgba(0, 0, 0, 0.644);
-    color: white;
-    border-radius: 10px;
-    border: solid 2px black;
+.navColor .sizeLogo {
+  width: 7rem;
 }
-
-
-/*--------------------------------------------*/
-/*MAIN - CONCIERTOS*/
-
-.concertCardColor {
-    background-color: rgba(0, 0, 0, 0.462);
-    color: white
-}
-
-.concertDate {
-    text-align: center;
-    margin-top: 5px;
-}
-
 
 /*--------------------------------------------*/
 /*MEDIA QUERIES*/
-
 @media screen and (min-width: 992px) {
-    
-    /* HEADER */
-    .navColor {
-        background-color:  rgba(0, 0, 0, 0.468);
-    } 
-
-    /*MAIN - HOME*/
-    .main {
-        height: 100vh;
-    }
+  .navColor {
+    background-color: rgba(0, 0, 0, 0.468);
+  }
+}
+.instagram i:hover {
+  color: #C13584;
 }
 
-@media screen and (min-width: 576px) {
-
-    .home { 
-        background-image: url("../assets/img/livingSentados_mobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    
-    .discografia {
-        background-image: url("../assets/img/barParados.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    } 
-    
-    .conciertos {
-        background-image: url("../assets/img/barSentados.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    .media {
-        background-image: url("../assets/img/Libro2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    .contacto {
-        background-image: url("../assets/img/libro.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+.facebook i:hover {
+  color: #2f55a4;
 }
+
+.youtube i:hover {
+  color: #c4302b;
+}
+
+.spotify i:hover {
+  color: #1DB954;
+}
+
+.main {
+  height: 20vh;
+}
+
+/*LA BANDA*/
+.infoLaBanda {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  border-radius: 10px;
+}
+
+.imgBanda {
+  width: 100%;
+}
+
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+@media screen and (min-width: 992px) {
+  .main {
+    height: 100vh;
+  }
+}
+.concertCardColor {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  border: solid 2px black;
+}
+.concertCardColor .concertDate {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.formStyle {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(223, 222, 222, 0.8);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.navColor {
+    background-color: map-get($colors, blackColor);
+
+    .sizeLogo {
+        width: 7rem;
+    }
+}
+
+
+/*--------------------------------------------*/
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 992px) {
+
+    .navColor {
+        background-color: map-get($colors, navBackgroundColor);
+    } 
+}
+

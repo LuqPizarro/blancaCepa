@@ -51,48 +51,46 @@
         </nav>
     </header>
 
-       <!--Contenido principal-->
-       <main class="main">
-
-        <div class="tituloPrincipal">
-            <h1>CONTACTO</h1>
+    <!--Contenido principal-->
+    <main class="container">
+        <div class="my-4">
+            <h1 class="tituloPrincipal">CONTACTO</h1>
         </div>
 
-        <div class="contenedorForm">
+        <div class="card cardStyle w-50 mx-auto">
             <form action="">
-                <div>
-                    <label for="nombre"> Nombre y Apellido </label>
-                    <br>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off">
+
+                <div class="row">
+                    <div class="col text-center">
+                        <input type="text" class="formStyle" name="nombre" placeholder="Nombre" aria-label="Nombre" required autofocus autocomplete="off">
+                    </div>
+                    <div class="col text-center">
+                        <input type="text" class="formStyle" placeholder="Apellido" aria-label="Apellido" required autofocus autocomplete="off">
+                    </div>
                 </div>
-                <br>
-                <div>
-                    <label for="edad"> Nombre y Apellido </label>
-                    <br>
-                    <input id ="edad" name="edad" type="date" placeholder="Fecha de Nacimiento" required>
+                
+                <div class="my-5">
+                    <input type="email" class="formStyle w-100" placeholder="name@example.com">
                 </div>
-                <br>
-                <div>
-                    <label for="email"> Email </label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Ingrese su E-mail">
+
+                <div class="mb-3">
+                    <textarea class="formStyle w-100" rows="1" placeholder="Su mensaje aqui"></textarea>
                 </div>
-                <br>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+
+
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input" type="checkbox" id="terminosYCondiciones" checked>
+                    <label class="form-check-label" for="terminosYCondiciones">Acepto terminos y condiciones</label>
                 </div>
-                <br>
-                <div>
-                    <label for="term_cond">
-                        <input type="checkbox" name="term_cond" id="term_cond"> Acepto terminos y condiciones
-                    </label>
-                </div>
+
     
-                <div>
-                    <input type="submit" id="enviar" value="Enviar">
-                    <input type="button" id="reset" value="Reset">
+                <div class="row">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-success" value="Enviar">Enviar</button>
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-danger" value="Reset">Reset</button>
+                    </div>
                 </div>
             </form>
     
