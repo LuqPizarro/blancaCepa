@@ -57,30 +57,34 @@
             <h1 class="tituloPrincipal">CONTACTO</h1>
         </div>
 
-        <div class="card cardStyle w-50 mx-auto">
+        <div class="card cardStyle w-75 mx-auto">
             <form action="">
 
                 <div class="row">
                     <div class="col text-center">
                         <input type="text" class="formStyle" name="nombre" placeholder="Nombre" aria-label="Nombre" required autofocus autocomplete="off">
                     </div>
-                    <div class="col text-center">
+                    <div class="col text-center mt-2">
                         <input type="text" class="formStyle" placeholder="Apellido" aria-label="Apellido" required autofocus autocomplete="off">
+                    </div>
+                    <div class="col text-center mt-2">
+                        <input type="email" class="formStyle" placeholder="name@example.com">
                     </div>
                 </div>
                 
-                <div class="my-5">
-                    <input type="email" class="formStyle w-100" placeholder="name@example.com">
-                </div>
-
-                <div class="mb-3">
-                    <textarea class="formStyle w-100" rows="1" placeholder="Su mensaje aqui"></textarea>
+                <div class="mb-4 mt-5 form-floating">
+                    <textarea class="formStyle w-100" id="floatingInput" rows="3" placeholder="Su mensaje aqui"></textarea>
                 </div>
 
 
-                <div class="form-check form-switch mb-5">
+                <div class="form-check form-switch mb-1">
                     <input class="form-check-input" type="checkbox" id="terminosYCondiciones" checked>
                     <label class="form-check-label" for="terminosYCondiciones">Acepto terminos y condiciones</label>
+                </div>
+
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input" type="checkbox" id="terminosYCondiciones">
+                    <label class="form-check-label" for="terminosYCondiciones">Tengo mas de 18 años</label>
                 </div>
 
     

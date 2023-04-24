@@ -74,11 +74,11 @@
       background-size: cover;
       background-repeat: no-repeat;
   }*/
-  /* .contacto {
-       background-image: url("../assets/img/libro.jpg");
-       background-size: cover;
-       background-repeat: no-repeat;
-   }*/
+  .contacto {
+    background-image: url("../assets/img/libro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .navColor {
   background-color: black;
