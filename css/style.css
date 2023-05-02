@@ -7,9 +7,9 @@
 
 .home, .contacto, .media, .discografia, .conciertos {
   font-family: "quicksand", sans-serif;
-  background-image: url("../assets/img/backgroundMobile.jpg");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8549019608), rgba(34, 10, 15, 0.8549019608), rgba(59, 12, 19, 0.8549019608), rgba(83, 9, 18, 0.8549019608), rgba(107, 9, 9, 0.8549019608)), url("../assets/img/background/backgroundMobile.jpg");
   background-color: rgb(17, 0, 0);
-  background-size: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -55,29 +55,19 @@
 /*-----------------------------------------------*/
 @media screen and (min-width: 576px) {
   .home, .conciertos, .discografia, .media, .contacto {
-    background-image: url("../assets/img/livingSentados_mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../assets/img/background/livingSentados_mobile.jpg");
   }
   .discografia {
-    background-image: url("../assets/img/barParados.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../assets/img/background/barParados.jpg");
   }
   .conciertos {
-    background-image: url("../assets/img/barSentados.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../assets/img/background/barSentados.jpg");
   }
-  /*.media {
-      background-image: url("../assets/img/Libro2.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-  }*/
+  .media {
+    background-image: url("../assets/img/background/Libro2.jpg");
+  }
   .contacto {
-    background-image: url("../assets/img/libro.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../assets/img/background/libro.jpg");
   }
 }
 .navColor {
@@ -85,6 +75,28 @@
 }
 .navColor .sizeLogo {
   width: 7rem;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+  margin-block: 2px;
+}
+.link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.link:hover::after {
+  transform: scaleX(1);
 }
 
 /*--------------------------------------------*/
@@ -126,6 +138,15 @@
   width: 100%;
 }
 
+/*MUSICOS*/
+.imgMusicos {
+  width: 15rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 /*--------------------------------------------*/
 /*MEDIA QUERIES*/
 @media screen and (min-width: 992px) {
@@ -148,6 +169,22 @@
   background-color: transparent;
   border-bottom: 1px solid rgba(223, 222, 222, 0.8);
   color: white;
+}
+
+.btnStyle {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 7px;
+}
+.btnStyle:hover {
+  background-color: white;
+  color: black;
+}
+
+.videoSize {
+  width: 80%;
+  height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blanca Cepa</title>
+    <meta name="description" content="Mira los video clips de Blanca Cepa, podes suscribirte a su canal de Youtube para enterarte de todas las novedades">
+    <meta name="keywords" content="blanca cepa, musica, rock, wilde, avellaneda, videos, videoclip, clips, youtube">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Estilo propio-->
-    <link rel="stylesheet" href="../css/style.css">
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/b81ea28978.js" crossorigin="anonymous"></script>
+    <!--Estilo propio-->
+    <link rel="stylesheet" href="../css/style.css">
     <!--Icono-->
     <link rel="icon" href="../flavicon.ico" type="image/png">
+    <title>Media - Blanca Cepa</title>
 </head>
 
 <body class="media">
@@ -34,19 +36,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="discografia.html">Discografia</a>
+                            <a class="nav-link link" href="discografia.html">Discografia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="conciertos.html">Conciertos</a>
+                            <a class="nav-link link" href="conciertos.html">Conciertos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Media</a>
+                            <a class="nav-link link active" aria-current="page" href="#">Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -62,31 +64,61 @@
             </div>
         </div>
         
-        <div>
-            <h2 class="tituloSecundario mt-5"> Videos </h2>
-
-            <div class="card cardStyle text-center mx-auto">
-                <div class="card-body">
-                    <h3>Verdugo</h3>
-                    <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/B0QK0zqAaVc"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
+        <section class="videos">
+            <div>
+                <h2 class="tituloSecundario mt-5"> Videos </h2>
     
-            <div class="card cardStyle text-center mx-auto">
-                <div class="card-body">
-                    <h3>Alerta, No Es Un Simulacro</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vkV_5ibrCHA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                <div class="card cardStyle text-center mx-auto">
+                    <div class="card-body">
+                        <h3>Verdugo</h3>
+                        <iframe class="rounded videoSize" src="https://www.youtube.com/embed/B0QK0zqAaVc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+        
+                <div class="card cardStyle text-center mx-auto">
+                    <div class="card-body">
+                        <h3>Alerta, No Es Un Simulacro</h3>
+                        <iframe class="rounded videoSize" src="https://www.youtube.com/embed/vkV_5ibrCHA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!--<section class="fotos">
+
+            <h2 class="tituloSecundario"> Fotos </h2>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/galeria/1.jpg" class="d-block w-50" alt="foto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/galeria/2.jpg" class="d-block w-50" alt="foto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/galeria/3.jpg" class="d-block w-50" alt="foto 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>-->
+ 
         
 
     </main>

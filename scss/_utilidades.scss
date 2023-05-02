@@ -1,8 +1,8 @@
 .home{ 
     font-family: $fontType;
-    background-image: url("../assets/img/backgroundMobile.jpg");
+    background-image: linear-gradient(to right top, #000000da, #220a0fda, #3b0c13da, #530912da, #6b0909da), url("../assets/img/background/backgroundMobile.jpg");
     background-color: map-get($colors, bodyBackgroundColor);
-    background-size: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
@@ -51,32 +51,22 @@
 @media screen and (min-width: 576px) {
 
     .home { 
-        background-image: url("../assets/img/livingSentados_mobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("../assets/img/background/livingSentados_mobile.jpg");
     }
     
     .discografia {
-        background-image: url("../assets/img/barParados.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("../assets/img/background/barParados.jpg");
     } 
     
     .conciertos {
-        background-image: url("../assets/img/barSentados.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("../assets/img/background/barSentados.jpg");
     }
 
-    /*.media {
-        background-image: url("../assets/img/Libro2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }*/ 
+    .media {
+        background-image: url("../assets/img/background/Libro2.jpg");
+    }
 
    .contacto {
-        background-image: url("../assets/img/libro.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: url("../assets/img/background/libro.jpg");
     }
 }
