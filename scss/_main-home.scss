@@ -19,13 +19,12 @@
 .imgMusicos {
     width: 15rem;
     transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
-.imgMusicos:hover {
-    transform: scale(1.1); 
-
-
-}
 h3 {
     font-size: 1.5rem;
 }
