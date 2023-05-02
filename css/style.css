@@ -141,10 +141,6 @@
 /*MUSICOS*/
 .imgMusicos {
   width: 15rem;
-  transition: transform 0.2s;
-}
-.imgMusicos:hover {
-  transform: scale(1.1);
 }
 
 h3 {
@@ -189,6 +185,20 @@ h3 {
 .videoSize {
   width: 80%;
   height: 50vh;
+}
+
+.galeria {
+  margin: 0;
+  padding: 0;
+}
+.galeria .imgStyle {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.galeria .imgStyle:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
