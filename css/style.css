@@ -55,7 +55,7 @@
 /*-----------------------------------------------*/
 @media screen and (min-width: 576px) {
   .home, .conciertos, .discografia, .media, .contacto {
-    background-image: url("../assets/img/background/livingSentados_mobile.jpg");
+    background-image: url("../assets/img/background/livingSentados.jpg");
   }
   .discografia {
     background-image: url("../assets/img/background/barParados.jpg");
@@ -141,6 +141,11 @@
 /*MUSICOS*/
 .imgMusicos {
   width: 15rem;
+  transition: transform 0.2s;
+}
+
+.imgMusicos:hover {
+  transform: scale(1.1);
 }
 
 h3 {
