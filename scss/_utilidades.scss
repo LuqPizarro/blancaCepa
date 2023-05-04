@@ -1,6 +1,6 @@
 .home{ 
     font-family: $fontType;
-    background-image: linear-gradient(to right top, #000000da, #220a0fda, #3b0c13da, #530912da, #6b0909da), url("../assets/img/background/backgroundMobile.jpg");
+    background-image: linear-gradient(to right top, #0000007e, #220a0f7e, #3b0c137e, #5309127e, #6b09097e), url("../assets/img/background/backgroundMobile.jpg");
     background-color: map-get($colors, bodyBackgroundColor);
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 .cardStyle {
     margin: 1rem;
-    padding: 5vh;
+    padding: 3vh;
     padding-bottom: 2vh;
     background-color: map-get($colors, cardBackgroundColor);
     color: map-get($colors, whiteColor);

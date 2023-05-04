@@ -7,7 +7,7 @@
 
 .home, .contacto, .media, .discografia, .conciertos {
   font-family: "quicksand", sans-serif;
-  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8549019608), rgba(34, 10, 15, 0.8549019608), rgba(59, 12, 19, 0.8549019608), rgba(83, 9, 18, 0.8549019608), rgba(107, 9, 9, 0.8549019608)), url("../assets/img/background/backgroundMobile.jpg");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.4941176471), rgba(34, 10, 15, 0.4941176471), rgba(59, 12, 19, 0.4941176471), rgba(83, 9, 18, 0.4941176471), rgba(107, 9, 9, 0.4941176471)), url("../assets/img/background/backgroundMobile.jpg");
   background-color: rgb(17, 0, 0);
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 
 .cardStyle {
   margin: 1rem;
-  padding: 5vh;
+  padding: 3vh;
   padding-bottom: 2vh;
   background-color: rgba(0, 0, 0, 0.644);
   color: white;
@@ -158,12 +158,15 @@
     height: 100vh;
   }
 }
-.concertCardColor {
+.containerAnimation {
+  overflow: hidden;
+}
+.containerAnimation .concertCardColor {
   background-color: rgba(0, 0, 0, 0.644);
   color: white;
   border: solid 2px black;
 }
-.concertCardColor .concertDate {
+.containerAnimation .concertCardColor .concertDate {
   text-align: center;
   margin-top: 5px;
 }

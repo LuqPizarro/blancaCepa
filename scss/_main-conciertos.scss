@@ -1,11 +1,19 @@
+.containerAnimation{
+    overflow: hidden;
 
-.concertCardColor {
-    background-color: map-get($colors, cardBackgroundColor);
-    color: map-get($colors, whiteColor);
-    border: solid 2px map-get($colors, blackColor);
-
-    .concertDate {
-        text-align: $alignCenter;
-        margin-top: 5px;
+    .concertCardColor {
+        background-color: map-get($colors, cardBackgroundColor);
+        color: map-get($colors, whiteColor);
+        border: solid 2px map-get($colors, blackColor);
+        
+        
+    
+        .concertDate {
+            text-align: $alignCenter;
+            margin-top: 5px;
+        }
     }
+    
 }
+
+
