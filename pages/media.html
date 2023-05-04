@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/b81ea28978.js" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <!--Estilo propio-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Icono-->
@@ -56,13 +58,13 @@
     <!--Contenido principal-->
     <main class="container">
         <div>
-            <div class="my-5 pt-5">
+            <div class="my-5 pt-5" data-aos="fade-down" data-aos-duration="750">
                 <h1 class="tituloPrincipal">MEDIA</h1>
             </div>
         </div>
         
         <section class="videos">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="750">
                 <h2 class="tituloSecundario mt-5"> Videos </h2>
     
                 <div class="card cardStyle text-center mx-auto">
@@ -229,10 +231,13 @@
         <p class="text-center text-light">Copyright © 2023 Blanca Cepa · Todos los derechos reservados</p>
     </footer>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

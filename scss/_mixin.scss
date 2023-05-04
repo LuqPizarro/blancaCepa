@@ -4,9 +4,10 @@
     margin: auto;
 
     background-color: map-get($colors, titleBackgroundColor);
+    color: map-get($colors, blackColor);
     border-radius: $radius-15;
     backdrop-filter: blur(5px);
     text-align: $alignCenter;
     letter-spacing: $letterSpacing;
-    border: solid 2px map-get($colors, blackColor );
+    border: solid 2px map-get($colors, blackColor);
 };

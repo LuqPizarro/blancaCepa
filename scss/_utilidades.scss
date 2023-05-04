@@ -36,14 +36,13 @@
 }
 
 .cardStyle {
-    margin: 2rem;
+    margin: 1rem;
     padding: 5vh;
     padding-bottom: 2vh;
     background-color: map-get($colors, cardBackgroundColor);
     color: map-get($colors, whiteColor);
     border-radius: $radius-10;
     border: solid 2px map-get($colors, blackColor);
-    /*text-align: $alignCenter;*/
 }
 
 /*-----------------------------------------------*/
@@ -68,5 +67,9 @@
 
    .contacto {
         background-image: url("../assets/img/background/libro.jpg");
+    }
+
+    .cardStyle {
+        margin: 2rem;
     }
 }
