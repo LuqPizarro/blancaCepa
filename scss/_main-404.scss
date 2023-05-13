@@ -1,0 +1,30 @@
+.body404 {
+    height: 100vh;
+
+    .body404__div {
+        height: 75vh;
+        text-align: center;
+
+        .body404__div__h1 {
+            font-weight: bold;
+            color: rgb(126, 12, 12)
+        }
+
+        .body404__div__h2 {
+            color: rgb(255, 255, 255)
+        }
+
+        .body404__div__p {
+            color: white;
+
+            .body404__div__a {
+                text-decoration: none;
+                color: rgb(141, 140, 140);
+    
+                &:hover {
+                    color: rgb(74, 74, 74)
+                }
+            }
+        }
+    }
+}  

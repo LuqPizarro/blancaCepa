@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.home, .contacto, .media, .discografia, .conciertos {
+.home, .page404, .contacto, .media, .discografia, .conciertos {
   font-family: "quicksand", sans-serif;
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.4941176471), rgba(34, 10, 15, 0.4941176471), rgba(59, 12, 19, 0.4941176471), rgba(83, 9, 18, 0.4941176471), rgba(107, 9, 9, 0.4941176471)), url("../assets/img/background/backgroundMobile.jpg");
   background-color: rgb(17, 0, 0);
@@ -55,7 +55,7 @@
 
 /*-----------------------------------------------*/
 @media screen and (min-width: 576px) {
-  .home, .conciertos, .discografia, .media, .contacto {
+  .home, .conciertos, .discografia, .media, .contacto, .page404 {
     background-image: url("../assets/img/background/livingSentados.jpg");
   }
   .discografia {
@@ -69,6 +69,9 @@
   }
   .contacto {
     background-image: url("../assets/img/background/libro.jpg");
+  }
+  .page404 {
+    background-image: url("../assets/img/background/404.jpg");
   }
   .cardStyle {
     margin: 2rem;
@@ -207,6 +210,31 @@
 }
 .galeria .imgStyle:hover {
   transform: scale(1.1);
+}
+
+.body404 {
+  height: 100vh;
+}
+.body404 .body404__div {
+  height: 75vh;
+  text-align: center;
+}
+.body404 .body404__div .body404__div__h1 {
+  font-weight: bold;
+  color: rgb(126, 12, 12);
+}
+.body404 .body404__div .body404__div__h2 {
+  color: rgb(255, 255, 255);
+}
+.body404 .body404__div .body404__div__p {
+  color: white;
+}
+.body404 .body404__div .body404__div__p .body404__div__a {
+  text-decoration: none;
+  color: rgb(141, 140, 140);
+}
+.body404 .body404__div .body404__div__p .body404__div__a:hover {
+  color: rgb(74, 74, 74);
 }
 
 /*# sourceMappingURL=style.css.map */
