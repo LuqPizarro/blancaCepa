@@ -219,21 +219,27 @@
   height: 75vh;
   text-align: center;
 }
-.body404 .body404__div .body404__div__h1 {
-  font-weight: bold;
-  color: rgb(126, 12, 12);
+.body404 .body404__div .body404__div__div {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 25rem;
+  border: solid 1px;
 }
-.body404 .body404__div .body404__div__h2 {
+.body404 .body404__div .body404__div__div .body404__div__h1 {
+  font-weight: bold;
   color: rgb(255, 255, 255);
 }
-.body404 .body404__div .body404__div__p {
+.body404 .body404__div .body404__div__div .body404__div__h2 {
+  color: rgb(255, 255, 255);
+}
+.body404 .body404__div .body404__div__div .body404__div__p {
   color: white;
 }
-.body404 .body404__div .body404__div__p .body404__div__a {
+.body404 .body404__div .body404__div__div .body404__div__p .body404__div__a {
   text-decoration: none;
-  color: rgb(141, 140, 140);
+  font-weight: bold;
+  color: rgb(255, 176, 176);
 }
-.body404 .body404__div .body404__div__p .body404__div__a:hover {
+.body404 .body404__div .body404__div__div .body404__div__p .body404__div__a:hover {
   color: rgb(74, 74, 74);
 }
 
